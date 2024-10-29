@@ -1,0 +1,67 @@
+@import 'ag-grid-community/styles/ag-grid.css';
+@import 'ag-grid-community/styles/ag-theme-alpine.css';
+
+:root {
+  --primary-blue: #049fd9;
+  --dark-bg: #1a1a1a;
+  --card-bg: #0d3349;
+  --text-light: #ffffff;
+  --success-green: #00a651;
+  --warning-orange: #f7a700;
+  --danger-red: #e31837;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--dark-bg);
+  color: var(--text-light);
+  font-family: Arial, sans-serif;
+}
+
+.dashboard-container {
+  padding: 1rem;
+}
+
+.section-title {
+  color: #c0c0c0;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: normal;
+}
+
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.metric-card {
+  background-color: var(--card-bg);
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+.metric-label {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.metric-value {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.monthly-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.chart-container {
+  margin-top: 2rem;
+  height: 300px;
+  width: 100%;
+}
